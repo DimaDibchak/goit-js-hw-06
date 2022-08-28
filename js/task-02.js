@@ -17,6 +17,7 @@ const ulEl = document.querySelector('#ingredients');
   ingredients.forEach( (ingredient) => {
     const list = document.createElement('li');
     list.textContent = ingredient;
+    list.classList.add('item');
     listArray.push(list);
   })
   return listArray;
